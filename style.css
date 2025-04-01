@@ -1,0 +1,151 @@
+/* General styling */
+body {
+    background-color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #ffa352;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Donation Appeal */
+.donation-appeal {
+    background-color: #f8f8f8;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 8px;
+    font-family: 'Georgia', serif;
+    color: #333;
+    text-align: left;
+}
+
+.donation-appeal h2 {
+    font-size: 28px;
+    color: #d35400;
+    margin-bottom: 15px;
+}
+
+.donation-appeal p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Navigation Bar Animation */
+.navbar {
+    position: fixed;
+    top: -45px;
+    left: 0;
+    width: 100%;
+    background-color: #ffa352;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: top 0.5s ease-in-out;
+}
+
+.navbar:hover {
+    top: 0;
+}
+
+/* Resource Image Section */
+.resource-section {
+    position: relative;
+    text-align: center;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.resource-image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 40%; /* Adjust width for spacing */
+}
+
+.resource-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    border-radius: 10px;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.resource-image-container:hover .resource-wrapper {
+    transform: translateY(0);
+}
+
+.resource-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(80%);
+}
+
+.resource-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    font-size: 40px;
+    color: white;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    transition: transform 0.5s ease-in-out;
+    opacity: 0.5;
+}
+
+.resource-image-container:hover .resource-text {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1;
+}
+.donation-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.image-container img {
+    width: 30%; /* Adjust as needed */
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
